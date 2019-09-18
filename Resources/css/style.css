@@ -1,0 +1,232 @@
+/* Warna Ungu: #6F77EF 
+warna tulisan: #013450 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-weight: 300;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    color: #013450;
+}
+
+.b-ungu {
+    background-color: #6F77EF;
+}
+
+h1 {
+    font-size: 200%;
+    color: #013450;
+}
+
+.color-ungu {
+    color: #6F77EF;
+}
+
+.color-hitam {
+    color: #013450;
+}
+
+.float-right {
+    float: right;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+
+/* TEXT FORMATTING */
+
+.t-align-right {
+    text-align: right;
+}
+
+.t-align-justify {
+    text-align: justify;
+}
+
+.t-align-center {
+    text-align: center;
+}
+
+.f-style-italic {
+    font-style: italic;
+}
+
+
+/* ROW */
+
+.row {
+    max-width: 75vw;
+    margin: 0 auto;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* PENGATURAN GRID */
+
+[class*="col-"] {
+    float: left;
+    padding: 5px;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+
+/* HEADER */
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin: 1vh 0;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 2vw;
+}
+
+.main-nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 80%;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+    float: left;
+}
+
+
+/* CONTENT */
+
+.background-pantai {
+    background-size: cover;
+    background-position: center;
+    height: 35vw;
+    width: 100%;
+    margin-top: 3vw;
+}
+
+.judul {
+    text-align: center;
+    margin: 10vh 0vh
+}
+
+.judul h1 {
+    display: inline-block;
+}
+
+.list-rute li {
+    margin-bottom: 2vh;
+    font-size: 90%;
+    list-style: none;
+    padding-bottom: 1vh;
+    border-bottom: 1px solid;
+}
+
+.list-rute li p {
+    display: inline-block;
+    float: right;
+}
+
+.btn-ungu:link,
+.btn-ungu:visited {
+    display: inline-block;
+    padding: 2vh 2vw;
+    border: #6F77EF solid;
+    text-decoration: none;
+    border-radius: 15px;
+    background-color: #6F77EF;
+    transition: background-color 0.3s;
+}
+
+.btn-ungu:hover,
+.btn-ungu:active {
+    background-color: #505aec;
+}
+
+.btn-ungu h1 {
+    color: #fff;
+}
+
+.info {
+    font-weight: 100;
+    line-height: 2;
+}
+
+.info a:link,
+.info a:visited {
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+
+.info a:link,
+.info a:visited {
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.4s;
+}
+
+.info a:hover,
+.info a:active {
+    border-bottom: 1px solid;
+}
