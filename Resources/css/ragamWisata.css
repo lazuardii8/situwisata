@@ -1,0 +1,17 @@
+.pict-main {
+    margin-top: 10vh;
+}
+
+.pict-sub {
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.judul-wisata {
+    margin-top: 9vh;
+}
+
+.kosong {
+    margin: 5vh 0;
+}
