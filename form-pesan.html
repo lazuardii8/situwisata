@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Resources/icon/fontAwesome/css/fontawesome.css" rel="stylesheet">
+    <link href="Resources/icon/fontAwesome/css/brands.css" rel="stylesheet">
+    <link href="Resources/icon/fontAwesome/css/solid.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Situwisata - Form pemesanan</title>
+</head>
+
+<body class="bg--white-2">
+
+
+    <!-- start:header     -->
+
+    <nav class="bg--blue-2">
+        <div class="grid-container p--relative">    
+            <a href="#!" class="brand--situwisata">
+                <img src="Resources/img/logo2.png" alt="logo situwisata">
+            </a>
+
+            <ul class="ul__list--inline float--right mt--3">
+                <li class="mr--3"><a href="#!" class="color--white-1 semibold text--mini">Home</a></li>
+                <li class="mr--3"><a href="#!" class="color--white-1 semibold text--mini">Ragam Wisata</a></li>
+                <li class="mr--3"><a href="#!" class="color--white-1 semibold text--mini">Rute Wisata</a></li>
+                <li class=""><a href="#!" class="color--white-1 semibold text--mini">Akomodasi</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- end:header     -->
+
+    <section>
+        <div class="grid-container">
+            <div class="row">
+                <div class="grid-item-8 grid-item-center">
+                    <h4 class="m--0 mb--3">Form <span class="color--blue-2">Pemesanan</span></h4>
+
+                    <form action="">
+
+                        <div class="grid-row">
+                            <div class="grid-item-6">
+                                <div class="form--grup">
+                                    <label>Nama Pemesan</label>
+                                    <input type="text" class="form--input">
+                                </div>
+                            </div>
+                            <div class="grid-item-6">
+                                <div class="form--grup">
+                                    <label>Nama Pemesan</label>
+                                    <input type="text" class="form--input">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form--grup mt--0">
+                            <label>Email</label>
+                            <input type="email" class="form--input">
+                        </div>
+
+                        <hr class="hr--form">
+
+                        <h4 class="m--0 mb--3">Tempat <span class="color--blue-2">Wisata</span></h4>
+
+                        <div class="form--grup">
+                            <label>Tanggal Liburan</label>
+                            <input type="date" class="form--input">
+                        </div>
+
+                        <div class="form--grup">
+                            <label>Paket Wisata</label>
+                            <select class="form--input">
+                             <option selected style="display: none">Pilih Paket</option>
+                             <option>Paket 1</option>
+                             <option>Paket 2</option>
+                             <option>Paket 3</option>
+                         </select>
+                     </div>
+
+                     <div class="form--grup">
+                        <label>Pesan Hotel</label>
+                        <select class="form--input">
+                         <option selected style="display: none">Pilih Status</option>
+                         <option>Ya</option>
+                         <option>Tidak</option>
+                     </select>
+                 </div>
+
+                 <div class="form--grup">
+                    <label>Hotel</label>
+                    <select class="form--input">
+                     <option selected style="display: none">Pilih Hotel</option>
+                     <option>Hotel Melaya - bintang 3</option>
+                 </select>
+             </div>
+
+             <button type="button" class="btn btn--blue-2 color--white-1">Generate Pesanan</button>
+
+         </form>
+
+         <div class="component--generate mt--5">
+             <h4 class="m--0 mb--3">Detail <span class="color--blue-2">Pemesanan</span></h4>
+
+             <div class="grid-row">
+                <div class="grid-item-7">
+
+                    <table class="component--generate-table">
+                        <tr>
+                            <td class="semibold">Nama</td>
+                            <td>Ardi</td>
+                        </tr>
+                        <tr>
+                            <td class="semibold">No</td>
+                            <td>0772382382</td>
+                        </tr>
+                        <tr>
+                            <td class="semibold">Alamat</td>
+                            <td>Jl sumatra</td>
+                        </tr>
+                        <tr>
+                            <td class="semibold">Email</td>
+                            <td>Ardi@test.test</td>
+                        </tr>
+                    </table>
+
+                    <hr class="hr--form">
+
+                    <table class="component--generate-table">
+                        <tr>
+                            <td class="semibold">Paket WIsata</td>
+                            <td>Paket 1</td>
+                        </tr>
+                        <tr>
+                            <td class="semibold">Hotel</td>
+                            <td>Hotel Melaya - bintang 3</td>
+                        </tr>
+                    </table>
+
+                </div>
+                <div class="grid-item-5">
+
+                    <table class="component--generate-table">
+                        <tr>
+                            <td class="semibold">Paket WIsata</td>
+                            <td class="text--right">IDR 250.000</td>
+                        </tr>
+                        <tr>
+                            <td class="semibold">Hotel</td>
+                            <td class="text--right">IDR 500.000</td>
+                        </tr>
+                    </table>
+
+                    <hr class="hr--form mt--2 mb--2">
+
+                    <table class="component--generate-table">
+                        <tr>
+                            <td class="semibold">Total</td>
+                            <td class="text--right">IDR 750.000</td>
+                        </tr>
+                    </table>
+
+                    <a href="#!" class="btn btn--blue-2 color--white-1 text--mini-14 d--inline-block mt--3">Generate Pesanan</a>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+</div>
+</section>
+
+
+<!-- end:content -->
+
+
+<!-- start:footer -->
+<footer>
+    <div class="grid-container">
+        <hr>
+        <div class="grid-row">
+            <div class="grid-item-6">
+                <p class="m--0 color--blue-2">©2019 Situwisata, All rights reserved.</p>
+            </div>
+            <div class="grid-item-6 text--right">
+                <p class="m--0 color--blue-2 d--inline-block mr--2">Info Lainnya</p>
+
+                <ul class="ul__list--inline component--social">
+                    <li><a href="#!"><img src="Resources/img/instagram.png" alt=""></a></li>
+                    <li><a href="#!"><img src="Resources/img/whatsapp.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end:footer -->
+</body>
+
+</html>
