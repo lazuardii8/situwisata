@@ -7,7 +7,7 @@
     <link href="Resources/icon/fontAwesome/css/brands.css" rel="stylesheet">
     <link href="Resources/icon/fontAwesome/css/solid.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css"> -->
     <title>Situwisata - Form pemesanan</title>
 </head>
 
@@ -17,7 +17,7 @@
     <!-- start:header     -->
 
     <nav class="bg--blue-2">
-        <div class="grid-container p--relative">    
+        <div class="grid-container p--relative">
             <a href="#!" class="brand--situwisata">
                 <img src="Resources/img/logo2.png" alt="logo situwisata">
             </a>
@@ -78,126 +78,130 @@
                              <option>Paket 2</option>
                              <option>Paket 3</option>
                          </select>
-                     </div>
+                        </div>
 
-                     <div class="form--grup">
-                        <label>Pesan Hotel</label>
-                        <select class="form--input">
+                        <div class="form--grup">
+                            <label>Pesan Hotel</label>
+                            <select class="form--input">
                          <option selected style="display: none">Pilih Status</option>
                          <option>Ya</option>
                          <option>Tidak</option>
                      </select>
-                 </div>
+                        </div>
 
-                 <div class="form--grup">
-                    <label>Hotel</label>
-                    <select class="form--input">
+                        <div class="form--grup">
+                            <label>Hotel</label>
+                            <select class="form--input">
                      <option selected style="display: none">Pilih Hotel</option>
                      <option>Hotel Melaya - bintang 3</option>
                  </select>
-             </div>
+                        </div>
 
-             <button type="button" class="btn btn--blue-2 color--white-1">Generate Pesanan</button>
+                        <button type="button" class="btn btn--blue-2 color--white-1">Generate Pesanan</button>
 
-         </form>
+                    </form>
 
-         <div class="component--generate mt--5">
-             <h4 class="m--0 mb--3">Detail <span class="color--blue-2">Pemesanan</span></h4>
+                    <div class="component--generate mt--5">
+                        <h4 class="m--0 mb--3">Detail <span class="color--blue-2">Pemesanan</span></h4>
 
-             <div class="grid-row">
-                <div class="grid-item-7">
+                        <div class="grid-row">
+                            <div class="grid-item-7">
 
-                    <table class="component--generate-table">
-                        <tr>
-                            <td class="semibold">Nama</td>
-                            <td>Ardi</td>
-                        </tr>
-                        <tr>
-                            <td class="semibold">No</td>
-                            <td>0772382382</td>
-                        </tr>
-                        <tr>
-                            <td class="semibold">Alamat</td>
-                            <td>Jl sumatra</td>
-                        </tr>
-                        <tr>
-                            <td class="semibold">Email</td>
-                            <td>Ardi@test.test</td>
-                        </tr>
-                    </table>
+                                <table class="component--generate-table">
+                                    <tr>
+                                        <td class="semibold">Nama</td>
+                                        <td>Ardi</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="semibold">No</td>
+                                        <td>0772382382</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="semibold">Alamat</td>
+                                        <td>Jl sumatra</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="semibold">Email</td>
+                                        <td>Ardi@test.test</td>
+                                    </tr>
+                                </table>
 
-                    <hr class="hr--form">
+                                <hr class="hr--form">
 
-                    <table class="component--generate-table">
-                        <tr>
-                            <td class="semibold">Paket WIsata</td>
-                            <td>Paket 1</td>
-                        </tr>
-                        <tr>
-                            <td class="semibold">Hotel</td>
-                            <td>Hotel Melaya - bintang 3</td>
-                        </tr>
-                    </table>
+                                <table class="component--generate-table">
+                                    <tr>
+                                        <td class="semibold">Paket WIsata</td>
+                                        <td>Paket 1</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="semibold">Hotel</td>
+                                        <td>Hotel Melaya - bintang 3</td>
+                                    </tr>
+                                </table>
+
+                            </div>
+                            <div class="grid-item-5">
+
+                                <table class="component--generate-table">
+                                    <tr>
+                                        <td class="semibold">Paket WIsata</td>
+                                        <td class="text--right">IDR 250.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="semibold">Hotel</td>
+                                        <td class="text--right">IDR 500.000</td>
+                                    </tr>
+                                </table>
+
+                                <hr class="hr--form mt--2 mb--2">
+
+                                <table class="component--generate-table">
+                                    <tr>
+                                        <td class="semibold">Total</td>
+                                        <td class="text--right">IDR 750.000</td>
+                                    </tr>
+                                </table>
+
+                                <a href="#!" class="btn btn--blue-2 color--white-1 text--mini-14 d--inline-block mt--3">Pesana</a>
+
+                            </div>
+                        </div>
+
+                    </div>
 
                 </div>
-                <div class="grid-item-5">
+            </div>
+        </div>
+    </section>
 
-                    <table class="component--generate-table">
-                        <tr>
-                            <td class="semibold">Paket WIsata</td>
-                            <td class="text--right">IDR 250.000</td>
-                        </tr>
-                        <tr>
-                            <td class="semibold">Hotel</td>
-                            <td class="text--right">IDR 500.000</td>
-                        </tr>
-                    </table>
 
-                    <hr class="hr--form mt--2 mb--2">
+    <!-- end:content -->
 
-                    <table class="component--generate-table">
-                        <tr>
-                            <td class="semibold">Total</td>
-                            <td class="text--right">IDR 750.000</td>
-                        </tr>
-                    </table>
 
-                    <a href="#!" class="btn btn--blue-2 color--white-1 text--mini-14 d--inline-block mt--3">Pesana</a>
+    <!-- start:footer -->
+    <footer>
+        <div class="grid-container">
+            <hr>
+            <div class="grid-row">
+                <div class="grid-item-6">
+                    <p class="m--0 color--blue-2">©2019 Situwisata, All rights reserved.</p>
+                </div>
+                <div class="grid-item-6 text--right">
+                    <p class="m--0 color--blue-2 d--inline-block mr--2">Info Lainnya</p>
 
+                    <ul class="ul__list--inline component--social">
+                        <li>
+                            <a href="#!"><img src="Resources/img/instagram.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#!"><img src="Resources/img/whatsapp.png" alt=""></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-
         </div>
-
-    </div>
-</div>
-</div>
-</section>
-
-
-<!-- end:content -->
-
-
-<!-- start:footer -->
-<footer>
-    <div class="grid-container">
-        <hr>
-        <div class="grid-row">
-            <div class="grid-item-6">
-                <p class="m--0 color--blue-2">©2019 Situwisata, All rights reserved.</p>
-            </div>
-            <div class="grid-item-6 text--right">
-                <p class="m--0 color--blue-2 d--inline-block mr--2">Info Lainnya</p>
-
-                <ul class="ul__list--inline component--social">
-                    <li><a href="#!"><img src="Resources/img/instagram.png" alt=""></a></li>
-                    <li><a href="#!"><img src="Resources/img/whatsapp.png" alt=""></a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</footer>
-<!-- end:footer -->
+    </footer>
+    <!-- end:footer -->
 </body>
 
 </html>
