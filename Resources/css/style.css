@@ -61,11 +61,18 @@ h1 {
 
 .judul {
     text-align: center;
-    margin: 10vh 0vh
 }
 
 .judul h1 {
     display: inline-block;
+}
+
+.v-margin-10 {
+    margin: 10vh 0;
+}
+
+.font-size-16 {
+    font-size: 80%;
 }
 
 
@@ -156,4 +163,10 @@ h1 {
     .logo {
         float: left;
     }
+}
+
+.picture {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
