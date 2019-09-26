@@ -1,0 +1,13 @@
+.bullet-point {
+    height: 6vh;
+    width: 6vh;
+    border-radius: 50%;
+}
+
+h1 {
+    margin-left: 1vw;
+}
+
+.pic-hotel {
+    margin: 10px;
+}

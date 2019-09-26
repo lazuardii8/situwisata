@@ -32,6 +32,10 @@ h1 {
     color: #013450;
 }
 
+.color-putih {
+    color: #fff;
+}
+
 .float-right {
     float: right;
 }
@@ -55,16 +59,20 @@ h1 {
     text-align: center;
 }
 
+.t-align-left {
+    text-align: left;
+}
+
 .f-style-italic {
     font-style: italic;
 }
 
-.judul {
-    text-align: center;
+.d-inline-block {
+    display: inline-block;
 }
 
-.judul h1 {
-    display: inline-block;
+.judul-wisata {
+    margin-top: 9vh;
 }
 
 .v-margin-10 {
