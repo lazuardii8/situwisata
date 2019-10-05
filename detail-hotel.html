@@ -14,126 +14,141 @@
 <body class="bg--white-2">
 
 
-    <!-- start:header     -->
+    <!-- sidenav -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html" class="color--white-1 semibold text--mini">Home</a>
+      <a href="ragamWisata.html" class="color--white-1 semibold text--mini">Ragam Wisata</a>
+      <a href="ruteWisata.html" class="color--white-1 semibold text--mini">Rute Wisata</a>
+      <a href="akomodasi.html" class="color--white-1 semibold text--mini">Akomodasi</a>
+  </div>
 
-    <nav class="bg--blue-2">
-        <div class="grid-container p--relative">
+
+  <!-- start:header     -->
+
+  <nav class="bg--blue-2">
+    <div class="grid-container p--relative" id="myHeader">
+        <nav class="p--3">
             <a href="#!" class="brand--situwisata">
                 <img src="Resources/img/logo2.png" alt="logo situwisata">
             </a>
 
             <ul class="ul__list--inline float--right mt--3">
-                <li class="mr--3"><a href="#!" class="color--white-1 semibold text--mini">Home</a></li>
-                <li class="mr--3"><a href="#!" class="color--white-1 semibold text--mini">Ragam Wisata</a></li>
-                <li class="mr--3"><a href="#!" class="color--white-1 semibold text--mini">Rute Wisata</a></li>
-                <li class=""><a href="#!" class="color--white-1 semibold text--mini">Akomodasi</a></li>
+                <li class="hidden--mobile mr--3"><a href="index.html" class="color--white-1 semibold text--mini">Home</a></li>
+                <li class="hidden--mobile mr--3"><a href="ragamWisata.html" class="color--white-1 semibold text--mini">Ragam Wisata</a></li>
+                <li class="hidden--mobile mr--3"><a href="ruteWisata.html" class="color--white-1 semibold text--mini">Rute Wisata</a></li>
+                <li class="hidden--mobile "><a href="akomodasi.html" class="color--white-1 semibold text--mini">Akomodasi</a></li>
+                <li class="show--mobile"><span class="color--white-1 text--mini-18" style="cursor:pointer" onclick="openNav()"><i class="fa fa-th-list" aria-hidden="true"></i></span></li>
+            </ul>
+        </nav>
+    </div>
+</nav>
+
+<!-- end:header     -->
+
+<section>
+    <div class="grid-container">
+
+        <div class="component--hotel-image-detail radius-5">
+            <img src="Resources/img/bed-bedroom-cozy-164595.jpg" alt="">
+        </div>
+
+        <h3 class="text--center mb--2"><span class="color--blue-2">Hotel</span> Jaya wijaya</h3>
+
+        <div class="text--center">
+            <ul class="ul__list--inline component--rating">
+                <li>
+                    <a href="#!"><img src="Resources/img/star.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="#!"><img src="Resources/img/star.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="#!"><img src="Resources/img/star.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="#!"><img src="Resources/img/star.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="#!"><img src="Resources/img/star-1.png" alt=""></a>
+                </li>
             </ul>
         </div>
-    </nav>
 
-    <!-- end:header     -->
-
-    <section>
-        <div class="grid-container">
-
-            <div class="component--hotel-image-detail radius-5">
-                <img src="Resources/img/bed-bedroom-cozy-164595.jpg" alt="">
+        <div class="grid-row mt--5">
+            <div class="grid-item-6">
+                <h5 class="m--0 normal m--0 mb--1">Jl Patimura situbondo no 5</h5>
+                <p class="m--0">IDR <span class="color--blue-2 text--mini-25">250.000</span></p>
             </div>
+            <div class="grid-item-6 text--right">
+                <a href="form-pesan.html" class="btn btn--blue-2 color--white-1 d--inline-block mt-3">Pesan Sekarang</a>
+            </div>
+        </div>
 
-            <h3 class="text--center mb--2"><span class="color--blue-2">Hotel</span> Jaya wijaya</h3>
+        <p class="text--center mt--5">Lorem ipsum dolor sit amet, consetetur sadipscing elitr , sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+            no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+            et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+            aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+            diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
 
-            <div class="text--center">
-                <ul class="ul__list--inline component--rating">
+    </div>
+</section>
+
+<section>
+    <div class="grid-container">
+        <div class="grid-row">
+            <div class="grid-item-4 grid-item-xs-12">
+                <img src="Resources/img/hotel 1.jpg" class="component--hotel-image-descripsi radius-5 overflow--h" alt="">
+            </div>
+            <div class="grid-item-4 grid-item-xs-12">
+                <img src="Resources/img/hotel 6.jpg" class="component--hotel-image-descripsi radius-5 overflow--h" alt="">
+            </div>
+            <div class="grid-item-4 grid-item-xs-12">
+                <img src="Resources/img/hotel 2.jpg" class="component--hotel-image-descripsi radius-5 overflow--h" alt="">
+            </div>
+            <div class="grid-item-4 grid-item-xs-12">
+                <img src="Resources/img/hotel 3.jpg" class="component--hotel-image-descripsi radius-5 overflow--h" alt="">
+            </div>
+            <div class="grid-item-4 grid-item-xs-12">
+                <img src="Resources/img/hotel 4.jpg" class="component--hotel-image-descripsi radius-5 overflow--h" alt="">
+            </div>
+            <div class="grid-item-4 grid-item-xs-12">
+                <img src="Resources/img/hotel 5.jpg" class="component--hotel-image-descripsi radius-5 overflow--h" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- end:content -->
+
+
+<!-- start:footer -->
+<footer>
+    <div class="grid-container">
+        <hr>
+        <div class="grid-row">
+            <div class="grid-item-6">
+                <p class="m--0 color--blue-2">©2019 Situwisata, All rights reserved.</p>
+            </div>
+            <div class="grid-item-6 text--right">
+                <p class="m--0 color--blue-2 d--inline-block mr--2">Info Lainnya</p>
+
+                <ul class="ul__list--inline component--social">
                     <li>
-                        <a href="#!"><img src="Resources/img/star.png" alt=""></a>
+                        <a href="#!"><img src="Resources/img/instagram.png" alt=""></a>
                     </li>
                     <li>
-                        <a href="#!"><img src="Resources/img/star.png" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="#!"><img src="Resources/img/star.png" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="#!"><img src="Resources/img/star.png" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="#!"><img src="Resources/img/star-1.png" alt=""></a>
+                        <a href="#!"><img src="Resources/img/whatsapp.png" alt=""></a>
                     </li>
                 </ul>
             </div>
-
-            <div class="grid-row mt--5">
-                <div class="grid-item-6">
-                    <h5 class="m--0 normal m--0 mb--1">Jl Patimura situbondo no 5</h5>
-                    <p class="m--0">IDR <span class="color--blue-2 text--mini-25">250.000</span></p>
-                </div>
-                <div class="grid-item-6 text--right">
-                    <a href="#!" class="btn btn--blue-2 color--white-1 d--inline-block mt-3">Pesan Sekarang</a>
-                </div>
-            </div>
-
-            <p class="text--center mt--5">Lorem ipsum dolor sit amet, consetetur sadipscing elitr , sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-                et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
-
         </div>
-    </section>
+    </div>
+</footer>
+<!-- end:footer -->
 
-    <section>
-        <div class="grid-container">
-            <div class="grid-row">
-                <div class="grid-item-4">
-                    <img src="Resources/img/hotel 1.jpg" class="component--hotel-image-descripsi radius-5 overflow--h" alt="">
-                </div>
-                <div class="grid-item-4">
-                    <img src="Resources/img/hotel 6.jpg" class="component--hotel-image-descripsi radius-5 overflow--h" alt="">
-                </div>
-                <div class="grid-item-4">
-                    <img src="Resources/img/hotel 2.jpg" class="component--hotel-image-descripsi radius-5 overflow--h" alt="">
-                </div>
-                <div class="grid-item-4">
-                    <img src="Resources/img/hotel 3.jpg" class="component--hotel-image-descripsi radius-5 overflow--h" alt="">
-                </div>
-                <div class="grid-item-4">
-                    <img src="Resources/img/hotel 4.jpg" class="component--hotel-image-descripsi radius-5 overflow--h" alt="">
-                </div>
-                <div class="grid-item-4">
-                    <img src="Resources/img/hotel 5.jpg" class="component--hotel-image-descripsi radius-5 overflow--h" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- end:content -->
-
-
-    <!-- start:footer -->
-    <footer>
-        <div class="grid-container">
-            <hr>
-            <div class="grid-row">
-                <div class="grid-item-6">
-                    <p class="m--0 color--blue-2">©2019 Situwisata, All rights reserved.</p>
-                </div>
-                <div class="grid-item-6 text--right">
-                    <p class="m--0 color--blue-2 d--inline-block mr--2">Info Lainnya</p>
-
-                    <ul class="ul__list--inline component--social">
-                        <li>
-                            <a href="#!"><img src="Resources/img/instagram.png" alt=""></a>
-                        </li>
-                        <li>
-                            <a href="#!"><img src="Resources/img/whatsapp.png" alt=""></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- end:footer -->
+<script type="text/javascript" src="assets/js/situwisata.js"></script>
 </body>
 
 </html>

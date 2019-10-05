@@ -14,193 +14,214 @@
 <body class="bg--white-2">
 
 
-    <!-- start:header     -->
-    <div class="situwisata--header">
+    <!-- sidenav -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html" class="color--white-1 semibold text--mini">Home</a>
+      <a href="ragamWisata.html" class="color--white-1 semibold text--mini">Ragam Wisata</a>
+      <a href="ruteWisata.html" class="color--white-1 semibold text--mini">Rute Wisata</a>
+      <a href="akomodasi.html" class="color--white-1 semibold text--mini">Akomodasi</a>
+  </div>
 
-        <div class="situwisata--header-bg"></div>
-        <div class="grid-container p--relative">
-            <nav class="p--3">
-                <a href="#!" class="brand--situwisata">
-                    <img src="Resources/img/logo2.png" alt="logo situwisata">
-                </a>
+  <!-- start:header     -->
+  <div class="situwisata--header">
 
-                <ul class="ul__list--inline float--right mt--3">
-                    <li class="mr--3"><a href="#!" class="color--white-1 semibold text--mini">Home</a></li>
-                    <li class="mr--3"><a href="#!" class="color--white-1 semibold text--mini">Ragam Wisata</a></li>
-                    <li class="mr--3"><a href="#!" class="color--white-1 semibold text--mini">Rute Wisata</a></li>
-                    <li class=""><a href="#!" class="color--white-1 semibold text--mini">Akomodasi</a></li>
-                </ul>
-            </nav>
-        </div>
+    <div class="situwisata--header-bg"></div>
+    <div class="grid-container p--relative" id="myHeader">
+        <nav class="p--3">
+            <a href="#!" class="brand--situwisata">
+                <img src="Resources/img/logo2.png" alt="logo situwisata">
+            </a>
 
-        <div class="grid-container p--relative">
-            <section>
-                <h1 class="color--white-1 mt--0 mb--1">Wisata Alam Karangrejo</h1>
-                <h4 class="color--white-1 m--0 mb--5 semibold">Wilayah Tak Terjamak Nan Indah</h4>
-
-                <a href="#!" class="d--inline-block component--buddalkan color--white-1 mt--5 semibold"><span class="p--3">Buddalkan</span> <i class="fa fa-chevron-right p--3 bg--white-1 color--green-1" aria-hidden="true"></i>
-                </a>
-            </section>
-        </div>
+            <ul class="ul__list--inline float--right mt--3">
+                <li class="hidden--mobile mr--3"><a href="index.html" class="color--white-1 semibold text--mini">Home</a></li>
+                <li class="hidden--mobile mr--3"><a href="ragamWisata.html" class="color--white-1 semibold text--mini">Ragam Wisata</a></li>
+                <li class="hidden--mobile mr--3"><a href="ruteWisata.html" class="color--white-1 semibold text--mini">Rute Wisata</a></li>
+                <li class="hidden--mobile "><a href="akomodasi.html" class="color--white-1 semibold text--mini">Akomodasi</a></li>
+                <li class="show--mobile"><span class="color--white-1 text--mini-18" style="cursor:pointer" onclick="openNav()"><i class="fa fa-th-list" aria-hidden="true"></i></span></li>
+            </ul>
+        </nav>
     </div>
 
-    <!-- end:header     -->
+    <div class="grid-container p--relative">
+        <section>
+            <h1 class="color--white-1 mt--0 mb--1">Wisata Alam Karangrejo</h1>
+            <h4 class="color--white-1 m--0 mb--5 semibold">Wilayah Tak Terjamak Nan Indah</h4>
+
+            <a href="#!" class="d--inline-block component--buddalkan color--white-1 mt--5 semibold"><span class="p--3">Buddalkan</span> <i class="fa fa-chevron-right p--3 bg--white-1 color--green-1" aria-hidden="true"></i>
+            </a>
+        </section>
+    </div>
+</div>
+
+<!-- end:header     -->
 
 
-    <!-- start:content? -->
-    <section>
-        <div class="grid-container">
-            <div class="grid-row">
-                <div class="grid-item-5">
-                    <h3 class="color--blue-1 semibold">Panorama Untuk Berbagi
-                    </h3>
+<!-- start:content? -->
+<section>
+    <div class="grid-container">
+        <div class="grid-row">
+            <div class="grid-item-md-5">
+                <h3 class="color--blue-1 semibold">Panorama Untuk Berbagi
+                </h3>
 
-                    <p class="color--blue-1">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum</p>
-                    <ul class="ul__list--inline mt--3">
-                        <li class="v--middle mr--2">
-                            <span class="component--step color--white-1 text--center semibold">1</span>
-                        </li>
-                        <li>
-                            <h5 class="m--0 color--blue-2 semibold">Pantai Sumberberingin</h5>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="grid-item-7 text--right">
-
-                    <ul class="ul__list--inline">
-                        <li class="p--1">
-                            <ul class="ul__list">
-                                <li class="pb--1">
-                                    <img src="Resources/img/beach-clouds-daytime-994605.jpg" alt="" class="component--image-left radius-5 overflow--h">
-                                </li>
-                                <li class="pt--1">
-                                    <img src="Resources/img/LRM_EXPORT_906642754482799_20190903_224854439.jpeg" alt="" class="component--image-left radius-5 overflow--h">
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="p--1">
-                            <img src="Resources/img/LRM_EXPORT_906769502244469_20190903_225243031.jpeg" alt="" class="component--image-right  radius-5 overflow--h">
-                        </li>
-                    </ul>
-
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="grid-container">
-            <h4 class="text--center semibold color--blue-1"><span class="color--blue-2">Langkah</span> - Langkah</h4>
-
-            <div class="grid-row">
-                <div class="grid-item-7 grid-item-center">
-                    <div class="grid-row">
-                        <div class="grid-item-4">
-                            <div class="component--image-step shadow radius-5 overflow--h">
-                                <img src="Resources/IMG/choice.png" alt="">
-                            </div>
-                        </div>
-                        <div class="grid-item-8">
-                            <h5 class="semibold mb--2 mt--0">Pilih Wisata</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, quibusdam. At itaque libero doloribus excepturi tempore non ratione, consectetur ducimus error repellat facere fugiat dolorum, quod consequatur porro fugit
-                                totam.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                <p class="color--blue-1">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum</p>
+                <ul class="ul__list--inline mt--3">
+                    <li class="v--middle mr--2">
+                        <span class="component--step color--white-1 text--center semibold">1</span>
+                    </li>
+                    <li>
+                        <h5 class="m--0 color--blue-2 semibold">Pantai Sumberberingin</h5>
+                    </li>
+                </ul>
             </div>
 
-            <div class="grid-row">
-                <div class="grid-item-7 grid-item-center">
-                    <div class="grid-row">
-                        <div class="grid-item-8 text--right">
-                            <h5 class="semibold mb--2 mt--0">Lakukan Reservasi</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, quibusdam. At itaque libero doloribus excepturi tempore non ratione, consectetur ducimus error repellat facere fugiat dolorum, quod consequatur porro fugit
-                                totam.
-                            </p>
-                        </div>
+            <div class="grid-item-md-7 text--right">
 
-                        <div class="grid-item-4">
-                            <div class="component--image-step no--bg radius-5 overflow--h">
-                                <img src="Resources/IMG/phone-call.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                <ul class="ul__list--inline component--list-img-hompage">
+                    <li class="p--1">
+                        <ul class="ul__list  component--image-homepage">
+                            <li class="pb--1">
+                                <img src="Resources/img/beach-clouds-daytime-994605.jpg" alt="" class="component--image-left radius-5 overflow--h">
+                            </li>
+                            <li class="pt--1">
+                                <img src="Resources/img/LRM_EXPORT_906642754482799_20190903_224854439.jpeg" alt="" class="component--image-left radius-5 overflow--h">
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="p--1">
+                        <img src="Resources/img/LRM_EXPORT_906769502244469_20190903_225243031.jpeg" alt="" class="component--image-right  radius-5 overflow--h">
+                    </li>
+                </ul>
 
-            <div class="grid-row">
-                <div class="grid-item-7 grid-item-center">
-                    <div class="grid-row">
-                        <div class="grid-item-4">
-                            <div class="component--image-step no--bg radius-5 overflow--h">
-                                <img src="Resources/IMG/sunset.png" alt="">
-                            </div>
-                        </div>
-                        <div class="grid-item-8">
-                            <h5 class="semibold mb--2 mt--0">Nikmati Panorama</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, quibusdam. At itaque libero doloribus excepturi tempore non ratione, consectetur ducimus error repellat facere fugiat dolorum, quod consequatur porro fugit
-                                totam.
-                            </p>
-                        </div>
-                    </div>
-                </div>
             </div>
 
         </div>
-    </section>
+    </div>
+</section>
+
+<section>
+    <div class="grid-container">
+        <h4 class="text--center semibold color--blue-1"><span class="color--blue-2">Langkah</span> - Langkah</h4>
+
+        <div class="grid-row">
+            <div class="grid-item-7 grid-item-md-10 grid-item-center">
+                <div class="grid-row">
+                    <div class="grid-item-4">
+                        <div class="component--image-step shadow radius-5 overflow--h">
+                            <img src="Resources/IMG/choice.png" alt="">
+                        </div>
+                    </div>
+                    <div class="grid-item-8">
+                        <h5 class="semibold mb--2 mt--0">Pilih Wisata</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, quibusdam. At itaque libero doloribus excepturi tempore non ratione, consectetur ducimus error repellat facere fugiat dolorum, quod consequatur porro fugit
+                            totam.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-row">
+            <div class="grid-item-7 grid-item-md-10 grid-item-center">
+                <div class="grid-row">
+                    <div class="grid-item-8 text--right">
+                        <h5 class="semibold mb--2 mt--0">Lakukan Reservasi</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, quibusdam. At itaque libero doloribus excepturi tempore non ratione, consectetur ducimus error repellat facere fugiat dolorum, quod consequatur porro fugit
+                            totam.
+                        </p>
+                    </div>
+
+                    <div class="grid-item-4">
+                        <div class="component--image-step no--bg radius-5 overflow--h">
+                            <img src="Resources/IMG/phone-call.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-row">
+            <div class="grid-item-7 grid-item-md-10 grid-item-center">
+                <div class="grid-row">
+                    <div class="grid-item-4">
+                        <div class="component--image-step no--bg radius-5 overflow--h">
+                            <img src="Resources/IMG/sunset.png" alt="">
+                        </div>
+                    </div>
+                    <div class="grid-item-8">
+                        <h5 class="semibold mb--2 mt--0">Nikmati Panorama</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, quibusdam. At itaque libero doloribus excepturi tempore non ratione, consectetur ducimus error repellat facere fugiat dolorum, quod consequatur porro fugit
+                            totam.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
 
 
-    <section>
-        <div class="grid-container">
-            <h4 class="semibold">Penampakan <span class="color--blue-2">Wisata</span></h4>
+<section>
+    <div class="grid-container">
+        <h4 class="semibold">Penampakan <span class="color--blue-2">Wisata</span></h4>
 
-            <div class="grid-row">
-                <div class="grid-item-3">
+        <div class="grid-row">
+            <div class="grid-item-3 grid-item-md-6">
+                <div class="box-preview">
                     <img src="Resources/img/LRM_EXPORT_906769502244469_20190903_225243031.jpeg" class="component--image-review radius-5 overflow--h" alt="">
                 </div>
-                <div class="grid-item-3">
+            </div>
+            <div class="grid-item-3 grid-item-md-6">
+                <div class="box-preview">
                     <img src="Resources/img/LRM_EXPORT_906660368036646_20190903_224912053.jpeg" class="component--image-review radius-5 overflow--h" alt="">
                 </div>
-                <div class="grid-item-3">
+            </div>
+            <div class="grid-item-3 grid-item-md-6">
+                <div class="box-preview">
                     <img src="Resources/img/LRM_EXPORT_906642754482799_20190903_224854439.jpeg" class="component--image-review radius-5 overflow--h" alt="">
                 </div>
-                <div class="grid-item-3">
+            </div>
+            <div class="grid-item-3 grid-item-md-6">
+                <div class="box-preview">
                     <img src="Resources/img/beach-calm-clouds-457882.jpg" class="component--image-review radius-5 overflow--h" alt="">
                 </div>
             </div>
         </div>
-    </section>
-    <!-- end:content -->
+    </div>
+</section>
+<!-- end:content -->
 
 
-    <!-- start:footer -->
-    <footer>
-        <div class="grid-container">
-            <hr>
-            <div class="grid-row">
-                <div class="grid-item-6">
-                    <p class="m--0 color--blue-2">©2019 Situwisata, All rights reserved.</p>
-                </div>
-                <div class="grid-item-6 text--right">
-                    <p class="m--0 color--blue-2 d--inline-block mr--2">Info Lainnya</p>
+<!-- start:footer -->
+<footer>
+    <div class="grid-container">
+        <hr>
+        <div class="grid-row">
+            <div class="grid-item-6">
+                <p class="m--0 color--blue-2">©2019 Situwisata, All rights reserved.</p>
+            </div>
+            <div class="grid-item-6 text--right">
+                <p class="m--0 color--blue-2 d--inline-block mr--2">Info Lainnya</p>
 
-                    <ul class="ul__list--inline component--social">
-                        <li>
-                            <a href="#!"><img src="Resources/img/instagram.png" alt=""></a>
-                        </li>
-                        <li>
-                            <a href="#!"><img src="Resources/img/whatsapp.png" alt=""></a>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="ul__list--inline component--social">
+                    <li>
+                        <a href="#!"><img src="Resources/img/instagram.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#!"><img src="Resources/img/whatsapp.png" alt=""></a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </footer>
-    <!-- end:footer -->
+    </div>
+</footer>
+<!-- end:footer -->
+
+<script type="text/javascript" src="assets/js/situwisata.js"></script>
+
 </body>
 
 </html>
