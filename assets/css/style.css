@@ -598,6 +598,10 @@ a:hover{
 	text-align: center;
 }
 
+.text--justify{
+	text-align: justify;
+}
+
 /* typografi */
 
 h1{
@@ -634,6 +638,11 @@ p{
 
 .normal{
 	font-weight: normal !important;
+}
+
+
+.text--mini-12{
+	font-size: 12px !important;
 }
 
 .text--mini-14{
@@ -709,6 +718,30 @@ section{
 	background-color: white;
 }
 
+.form--input-blue-2{
+	width: 100%;
+	margin-top: .5rem;
+	height: 40px;
+	padding: 8px 5px;
+	background-color: transparent;
+	border-radius: 5px;
+	border: 2px solid #6F77EF;
+	transition: .5s;
+	color: #6F77EF;
+}
+
+.form--input-blue-2:hover{
+	box-shadow: 0px 5px 10px #6F77EF;
+	border: 2px solid #6F77EF;
+	background-color: white;
+}
+
+.form--input-blue-2:focus{
+	box-shadow: 0px 5px 10px #6F77EF;
+	border: 2px solid #6F77EF;
+	background-color: white;
+}
+
 .form--textarea{
 	width: 100%;
 	margin-top: .5rem;
@@ -756,6 +789,26 @@ section{
 
 .btn--blue-2:hover{
 	box-shadow: 0px 10px 30px RGBA(111, 119, 239, 0.36);
+}
+
+.btn--outline-blue-2{
+	border: 3px solid #6F77EF;
+	transition: .5s;
+}
+
+.btn--outline-blue-2:hover{
+	color: white;
+	background-color: #6F77EF;
+	box-shadow: 0px 10px 30px RGBA(111, 119, 239, 0.36);
+}
+
+ul>li> .active{
+	background-color: #6F77EF !important;
+	color: white !important
+}
+
+.btn--login{
+	padding: 10px 30px;
 }
 
 .btn--100{
@@ -974,6 +1027,10 @@ section{
 	width: 35px;
 }
 
+.component--rating-artikel li a img{
+	width: 15px;
+}
+
 .component--hotel-image-descripsi{
 	width: 100%;
 	height: 300px;
@@ -1012,6 +1069,39 @@ section{
 .fixed-nav nav{
 	max-width: 1200px;
 	margin: 0 auto;
+}
+
+.component--button-add a>div{
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 50%;
+	background-color: #6F77EF;
+	color: white;
+	text-align: center;
+	font-size: 25px;
+}
+
+.component--card-hotel> img:nth-child(1){
+	height: 200px;
+	object-fit: cover;
+	border-radius: 5px;
+}
+
+.component--pagination li a{
+	color: #6F77EF;
+}
+
+.component--pagination li .active{
+	padding:  5px 10px;
+	color: white;
+	background-color:  #6F77EF;
+}
+
+.img--radius{
+	border-radius: 50%;
+	width: 35px;
+	height: 35px;
 }
 
 /* sidenav */
@@ -1054,6 +1144,10 @@ section{
 	right: 25px;
 	font-size: 36px;
 	margin-left: 50px;
+}
+
+.component--card-login{
+	border: 3px solid #6F77EF;
 }
 
 @media screen and (max-height: 450px) {
