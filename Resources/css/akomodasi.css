@@ -1,13 +1,29 @@
 .bullet-point {
-    height: 6vh;
-    width: 6vh;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
+    background-color: #6F77EF;
+    line-height: 50px;
+    display: inline-block;
+    line-height: 45px;
 }
 
 h1 {
     margin-left: 1vw;
 }
 
+.judul-point{
+    font-size: 150%;
+}
+
 .pic-hotel {
-    margin: 10px;
+    margin-top: 15vh;
+    margin-bottom: 2vh;
+}
+
+.pic{
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    width: 100%;
 }
