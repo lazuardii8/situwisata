@@ -1,0 +1,74 @@
+li {
+    list-style: none;
+}
+
+td {
+    padding: 0 0.5vw;
+} 
+
+.bundar{
+    border: 1px solid;
+    border-color:#6F77EF; 
+    width: 35px;
+    border-radius: 100%;
+}
+
+.pict-sub {
+    height: 150px;
+    width: 250px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.judul-artikel{
+    font-size: 80%;
+}
+
+.isi-artikel{
+    font-size: 50%;
+}
+
+.content{
+    margin: 1vh 0;
+}
+
+.kotak{
+    margin: 0 1vw;
+    height: 30px;
+    width: 80%; 
+}
+
+.padding{
+    padding : 1vw;
+}
+
+@media only screen and (max-width: 768px) {
+    .mobile{
+        text-align: center;
+    }
+    .padding{
+        padding: auto;
+    }
+    .kotak{
+    margin: 0 0vw;
+    width: 100%; 
+    }
+}
+
+.profile-pic{
+    height: 4vh;
+    width:  4vh;
+    border: 1px #A5B7B4 solid;
+    border-radius: 100px;
+}
+
+.profile{
+    display: inline-block;
+    
+}
+
+.profile-name{
+    font-size: 70%;
+}
+
+

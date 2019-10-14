@@ -44,6 +44,11 @@ h1 {
     display: inline-block;
 }
 
+.jarak{
+    margin-top: 15vh;
+}
+
+
 
 /* TEXT FORMATTING */
 
@@ -99,6 +104,12 @@ h1 {
 
 
 /* HEADER */
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 
 .main-nav {
     list-style: none;
@@ -177,4 +188,24 @@ h1 {
     width: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+.btn-menu:link,
+.btn-menu:visited {
+    width: 70%;
+    margin:2vh 0vh;
+    display: inline-block;
+    padding: 2vh 2vw;
+    border: #6F77EF solid;
+    text-decoration: none;
+    border-radius: 15px;
+    background-color: #F9FBF5;
+    color: #6F77EF;
+    transition: background-color 0.3s;
+}
+    
+.btn-menu:hover,
+.btn-menu:active {
+    background-color: #6F77EF;
+    color: #F9FBF5;  
 }
