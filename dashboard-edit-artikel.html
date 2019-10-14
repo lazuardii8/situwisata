@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Resources/icon/fontAwesome/css/fontawesome.css" rel="stylesheet">
+    <link href="Resources/icon/fontAwesome/css/brands.css" rel="stylesheet">
+    <link href="Resources/icon/fontAwesome/css/solid.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Dashboard - Tambah Hotel</title>
+</head>
+
+<body class="bg--white-2">
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html" class="color--white-1 semibold text--mini">Home</a>
+        <a href="ragamWisata.html" class="color--white-1 semibold text--mini">Ragam Wisata</a>
+        <a href="ruteWisata.html" class="color--white-1 semibold text--mini">Rute Wisata</a>
+        <a href="akomodasi.html" class="color--white-1 semibold text--mini">Akomodasi</a>
+    </div>
+
+
+    <!-- start:header     -->
+
+    <nav class="bg--blue-2">
+        <div class="grid-container p--relative" id="myHeader">
+            <nav class="p--3">
+                <a href="#!" class="brand--situwisata">
+                    <img src="Resources/img/logo2.png" alt="logo situwisata">
+                </a>
+
+                <ul class="ul__list--inline float--right mt--3">
+                    <li class="hidden--mobile mr--3"><a href="index.html"
+                            class="color--white-1 semibold text--mini">Home</a></li>
+                    <li class="hidden--mobile mr--3"><a href="ragamWisata.html"
+                            class="color--white-1 semibold text--mini">Ragam Wisata</a></li>
+                    <li class="hidden--mobile mr--3"><a href="ruteWisata.html"
+                            class="color--white-1 semibold text--mini">Rute Wisata</a></li>
+                    <li class="hidden--mobile mr--3"><a href="akomodasi.html"
+                            class="color--white-1 semibold text--mini">Akomodasi</a></li>
+                    <li class="hidden--mobile "><a href="artikel.html"
+                            class="color--white-1 semibold text--mini">Artikel</a></li>
+                    <li class="show--mobile"><span class="color--white-1 text--mini-18" style="cursor:pointer"
+                            onclick="openNav()"><i class="fa fa-th-list" aria-hidden="true"></i></span></li>
+                </ul>
+            </nav>
+        </div>
+    </nav>
+
+    <!-- end:header     -->
+
+
+    <div class="grid-container mt--5 mb--5">
+        <div class="grid-row ">
+            <div class="grid-item-3 text--center">
+                <ul class="ul__list">
+                    <li class="mb--4"><a class="btn d--inline-block btn--100 btn--outline-blue-2 color--blue-2"
+                            href="#!">Daftar Hotel</a></li>
+                    <li class="mb--4"><a class="btn d--inline-block btn--100 btn--outline-blue-2 color--blue-2 active"
+                            href="#!">Daftar Artikel</a></li>
+                </ul>
+            </div>
+
+            <div class="grid-item-9">
+
+                <h4 class="bold color--blue-2 mt--0 text--center">Edit Data Artikel</h4>
+
+                <div class="grid-row ">
+                    <div class="grid-item-8 grid-item-center">
+                        <div class="component--card-login bg--white-1 p--5 radius-10">
+
+                            <form action="">
+
+                                <div class="form--grup mt--0">
+                                    <label class="color--blue-2">Judul</label>
+                                    <input type="text" class="form--input-blue-2">
+                                </div>
+
+
+                                <div class="form--grup mt--0">
+                                    <label class="color--blue-2">Foto</label>
+                                    <input type="file" class="form--input-blue-2">
+                                </div>
+
+
+                                <div class="form--grup mt--0">
+                                    <label class="color--blue-2">Artikel</label>
+                                    <textarea class="form--input-blue-2" style="height: 200px; resize: none;">
+
+                               </textarea>
+                                </div>
+
+                                <button type="button"
+                                    class="btn btn--blue-2 color--white-1 btn--login mx--auto d--block">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- start:footer -->
+    <footer>
+        <div class="grid-container">
+            <hr>
+            <div class="grid-row">
+                <div class="grid-item-6">
+                    <p class="m--0 color--blue-2">©2019 Situwisata, All rights reserved.</p>
+                </div>
+                <div class="grid-item-6 text--right">
+                    <p class="m--0 color--blue-2 d--inline-block mr--2">Info Lainnya</p>
+
+                    <ul class="ul__list--inline component--social">
+                        <li>
+                            <a href="#!"><img src="Resources/img/instagram.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#!"><img src="Resources/img/whatsapp.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end:footer -->
+
+    <script type="text/javascript" src="assets/js/situwisata.js"></script>
+
+</body>
+
+</html>
