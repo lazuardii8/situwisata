@@ -836,7 +836,7 @@ ul>li> .active{
 }
 
 .overflow--h{
-	overflow: : hidden;
+	overflow:  hidden;
 }
 /* color */
 .color--gray-1{
@@ -1174,14 +1174,17 @@ ul>li> .active{
 
 }
 
-@media screen and (max-width: 375px) {
+
+@media screen and (max-width: 600px){
 	.hidden--mobile{
 		display: none !important;
 	}
 	.show--mobile{
 		display: inline-block !important;
 	}
+}
 
+@media screen and (max-width: 375px) {
 	.component--image-step{
 		width: 100px;
 		height: 100px;

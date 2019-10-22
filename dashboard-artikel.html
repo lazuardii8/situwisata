@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -7,182 +8,220 @@
     <link href="Resources/icon/fontAwesome/css/brands.css" rel="stylesheet">
     <link href="Resources/icon/fontAwesome/css/solid.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="Resources/css/style.css">
-    <link rel="stylesheet" type="text/css" href="Resources/css/grid.css">
-    <link rel="stylesheet" type="text/css" href="Resources/css/daftarArtikel.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script src="Resources/js/mobileHeader.js"></script>
-    <title>Situwisata - Daftar-Artikel</title>
+    <title>Dashboard - Hotel</title>
 </head>
 
-<body>
+<body class="bg--white-2">
 
-    <!-- header -->
-    <div class="b-ungu col-12 header">
-        <div class="row">
-            <img src="Resources/img/logo2.png" alt="logo situwisata" class="logo">
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-            <ul class="main-nav" id="main-nav">
-                <li class="navbar"><a class="link" href="index.html">Home</a></li>
-                <li class="navbar"><a class="link" href="ragam-wisata.html">Ragam Wisata</a></li>
-                <li class="navbar"><a class="link" href="rute-wisata.html">Rute Wisata</a></li>
-                <li class="navbar"><a class="link" href="akomodasi.html">Akomodasi</a></li>
-                <li class="navbar"><a class="link" href="daftar-artikel.html">Artikel</a></li>
-            </ul>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html" class="color--white-1 semibold text--mini">Home</a>
+        <a href="ragamWisata.html" class="color--white-1 semibold text--mini">Ragam Wisata</a>
+        <a href="ruteWisata.html" class="color--white-1 semibold text--mini">Rute Wisata</a>
+        <a href="akomodasi.html" class="color--white-1 semibold text--mini">Akomodasi</a>
+    </div>
+
+
+    <!-- start:header     -->
+
+    <nav class="bg--blue-2">
+        <div class="grid-container p--relative" id="myHeader">
+            <nav class="p--3">
+                <a href="#!" class="brand--situwisata">
+                    <img src="Resources/img/logo2.png" alt="logo situwisata">
+                </a>
+
+                <ul class="ul__list--inline float--right mt--3">
+                    <li class="hidden--mobile mr--3"><a href="index.html"
+                            class="color--white-1 semibold text--mini">Home</a></li>
+                    <li class="hidden--mobile mr--3"><a href="ragamWisata.html"
+                            class="color--white-1 semibold text--mini">Ragam Wisata</a></li>
+                    <li class="hidden--mobile mr--3"><a href="ruteWisata.html"
+                            class="color--white-1 semibold text--mini">Rute Wisata</a></li>
+                    <li class="hidden--mobile mr--3"><a href="akomodasi.html"
+                            class="color--white-1 semibold text--mini">Akomodasi</a></li>
+                    <li class="hidden--mobile "><a href="artikel.html"
+                            class="color--white-1 semibold text--mini">Artikel</a></li>
+                    <li class="show--mobile"><span class="color--white-1 text--mini-18" style="cursor:pointer"
+                            onclick="openNav()"><i class="fa fa-th-list" aria-hidden="true"></i></span></li>
+                </ul>
+            </nav>
+        </div>
+    </nav>
+
+    <!-- end:header     -->
+
+
+    <div class="grid-container mt--5 mb--5">
+        <div class="grid-row ">
+            <div class="grid-item-3 text--center">
+                <ul class="ul__list">
+                    <li class="mb--4"><a class="btn d--inline-block btn--100 btn--outline-blue-2 color--blue-2 active"
+                            href="#!">Daftar Hotel</a></li>
+                    <li class="mb--4"><a class="btn d--inline-block btn--100 btn--outline-blue-2 color--blue-2"
+                            href="#!">Daftar Artikel</a></li>
+                </ul>
+            </div>
+
+            <div class="grid-item-9">
+
+
+                <div class="component--button-add normal text--mini-18">
+                    <a href="#!" class=" color--blue-2">
+                        <div class="d--inline-block mr--2 v--middle">+</div> Tambah Hotel
+                    </a>
+                </div>
+
+
+                <div class="grid-row mt--4 mb--5">
+
+                    <div class="grid-item-4 mt--3 mb--3">
+                        <div class="component--card-hotel">
+                            <img src="Resources/img/LRM_EXPORT_906807770815861_20190903_225401648.jpeg" alt="">
+
+                            <h5 class=" mt--2 mb--0 semibold color--blue-2 text--left">Cara Memilih Rute Yang Baik</h5>
+
+                            <p class="text--mini-14 text--justify">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit. Asperiores autem quo sint alias consectetur deserunt praesentium iusto ad quis,
+                                reprehenderit, corporis. Recusandae libero eius voluptates dolor eum. Cumque iure,
+                                placeat?</p>
+
+                            <ul class="ul__list--inline mt--1">
+                                <li class="v--middle mr--2">
+                                    <img src="Resources/img/hotel-man-person-2017802.jpg" class="img--radius" alt="">
+                                </li>
+                                <li class="semibold color--blue-2">
+                                    Admin
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="grid-item-4 mt--3 mb--3">
+                        <div class="component--card-hotel">
+                            <img src="Resources/img/LRM_EXPORT_906807770815861_20190903_225401648.jpeg" alt="">
+                    
+                            <h5 class=" mt--2 mb--0 semibold color--blue-2 text--left">Cara Memilih Rute Yang Baik</h5>
+                    
+                            <p class="text--mini-14 text--justify">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit. Asperiores autem quo sint alias consectetur deserunt praesentium iusto ad quis,
+                                reprehenderit, corporis. Recusandae libero eius voluptates dolor eum. Cumque iure,
+                                placeat?</p>
+                    
+                            <ul class="ul__list--inline mt--1">
+                                <li class="v--middle mr--2">
+                                    <img src="Resources/img/hotel-man-person-2017802.jpg" class="img--radius" alt="">
+                                </li>
+                                <li class="semibold color--blue-2">
+                                    Admin
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="grid-item-4 mt--3 mb--3">
+                        <div class="component--card-hotel">
+                            <img src="Resources/img/LRM_EXPORT_906807770815861_20190903_225401648.jpeg" alt="">
+                    
+                            <h5 class=" mt--2 mb--0 semibold color--blue-2 text--left">Cara Memilih Rute Yang Baik</h5>
+                    
+                            <p class="text--mini-14 text--justify">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit. Asperiores autem quo sint alias consectetur deserunt praesentium iusto ad quis,
+                                reprehenderit, corporis. Recusandae libero eius voluptates dolor eum. Cumque iure,
+                                placeat?</p>
+                    
+                            <ul class="ul__list--inline mt--1">
+                                <li class="v--middle mr--2">
+                                    <img src="Resources/img/hotel-man-person-2017802.jpg" class="img--radius" alt="">
+                                </li>
+                                <li class="semibold color--blue-2">
+                                    Admin
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="grid-item-4 mt--3 mb--3">
+                        <div class="component--card-hotel">
+                            <img src="Resources/img/LRM_EXPORT_906807770815861_20190903_225401648.jpeg" alt="">
+                    
+                            <h5 class=" mt--2 mb--0 semibold color--blue-2 text--left">Cara Memilih Rute Yang Baik</h5>
+                    
+                            <p class="text--mini-14 text--justify">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit. Asperiores autem quo sint alias consectetur deserunt praesentium iusto ad quis,
+                                reprehenderit, corporis. Recusandae libero eius voluptates dolor eum. Cumque iure,
+                                placeat?</p>
+                    
+                            <ul class="ul__list--inline mt--1">
+                                <li class="v--middle mr--2">
+                                    <img src="Resources/img/hotel-man-person-2017802.jpg" class="img--radius" alt="">
+                                </li>
+                                <li class="semibold color--blue-2">
+                                    Admin
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="grid-item-4 mt--3 mb--3">
+                        <div class="component--card-hotel">
+                            <img src="Resources/img/LRM_EXPORT_906807770815861_20190903_225401648.jpeg" alt="">
+                    
+                            <h5 class=" mt--2 mb--0 semibold color--blue-2 text--left">Cara Memilih Rute Yang Baik</h5>
+                    
+                            <p class="text--mini-14 text--justify">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit. Asperiores autem quo sint alias consectetur deserunt praesentium iusto ad quis,
+                                reprehenderit, corporis. Recusandae libero eius voluptates dolor eum. Cumque iure,
+                                placeat?</p>
+                    
+                            <ul class="ul__list--inline mt--1">
+                                <li class="v--middle mr--2">
+                                    <img src="Resources/img/hotel-man-person-2017802.jpg" class="img--radius" alt="">
+                                </li>
+                                <li class="semibold color--blue-2">
+                                    Admin
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="grid-item-4 mt--3 mb--3">
+                        <div class="component--card-hotel">
+                            <img src="Resources/img/LRM_EXPORT_906807770815861_20190903_225401648.jpeg" alt="">
+                    
+                            <h5 class=" mt--2 mb--0 semibold color--blue-2 text--left">Cara Memilih Rute Yang Baik</h5>
+                    
+                            <p class="text--mini-14 text--justify">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit. Asperiores autem quo sint alias consectetur deserunt praesentium iusto ad quis,
+                                reprehenderit, corporis. Recusandae libero eius voluptates dolor eum. Cumque iure,
+                                placeat?</p>
+                    
+                            <ul class="ul__list--inline mt--1">
+                                <li class="v--middle mr--2">
+                                    <img src="Resources/img/hotel-man-person-2017802.jpg" class="img--radius" alt="">
+                                </li>
+                                <li class="semibold color--blue-2">
+                                    Admin
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+
+                <ul class="ul__list--inline component--pagination mt-5">
+                    <li><a href="#!">Kembali</a></li>
+                    <li><a href="#!" class="active">Lanjut</a></li>
+                </ul>
+
+            </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-12 jarak"></div>
-        <div class="col-3 t-align-center">
-            <ul class="ul__list">
-                <li class="mb--4"><a class="btn d--inline-block btn--100 btn--outline-blue-2 color--blue-2" href="#!">Daftar
-                        Hotel</a></li>
-                <li class="mb--4"><a class="btn d--inline-block btn--100 btn--outline-blue-2 color--blue-2 active" href="#!">Daftar
-                        Artikel</a></li>
-            </ul>
-        </div>
-        <div class="col-9 " style="margin: 1vh 0">
-            <div class="col-12">
-                <table>
-                    <tr>
-                        <td>
-                            <div class="bundar t-align-center b-ungu">
-                                <i class="fas fa-plus color-putih"></i>
-                            </div>
-                        </td>
-                        <td>
-                            <h5 class="m--0 color--blue-2 semibold">Tempat Menginap</h5>
-                        </td>
-                    </tr>
-                    <td>
-                        <tr></tr>
-                    </td>
-                </table>     
-            </div>
-            <div class="col-4 content">
-                <div class="padding">
-                    <div class="mobile">
-                        <img class="picture pict-sub" src="Resources/img/LRM_EXPORT_906807770815861_20190903_225401648.jpeg">
-                        <h5 class="m--0 color--blue-2 semibold judul-artikel">Cara Memilih Rute Yang Baik</h5>
-                    </div>
-                    <p class="isi-artikel t-align-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                        Ipsum has been the industry's standard
-                        dummy text ever since the 1500s,</p>
-                    <ul class="ul__list--inline mt--1">
-                        <li class="v--middle mr--2">
-                            <img src="Resources/img/hotel-man-person-2017802.jpg" class="img--radius" alt="">
-                        </li>
-                        <li class="semibold color--blue-2">
-                            Admin
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-4 content">
-                <div class="padding">
-                    <div class="mobile">
-                        <img class="picture pict-sub" src="Resources/img/LRM_EXPORT_906807770815861_20190903_225401648.jpeg">
-                        <h5 class="m--0 color--blue-2 semibold judul-artikel">Cara Memilih Rute Yang Baik</h5>
-                    </div>
-                    <p class="isi-artikel t-align-justify">Lorem Ipsum is simply dummy text of the printing and typesetting
-                        industry. Lorem
-                        Ipsum has been the industry's standard
-                        dummy text ever since the 1500s,</p>
-                    <ul class="ul__list--inline mt--1">
-                        <li class="v--middle mr--2">
-                            <img src="Resources/img/hotel-man-person-2017802.jpg" class="img--radius" alt="">
-                        </li>
-                        <li class="semibold color--blue-2">
-                            Admin
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-4 content">
-                <div class="padding">
-                    <div class="mobile">
-                        <img class="picture pict-sub" src="Resources/img/LRM_EXPORT_906807770815861_20190903_225401648.jpeg">
-                        <h5 class="m--0 color--blue-2 semibold judul-artikel">Cara Memilih Rute Yang Baik</h5>
-                    </div>
-                    <p class="isi-artikel t-align-justify">Lorem Ipsum is simply dummy text of the printing and typesetting
-                        industry. Lorem
-                        Ipsum has been the industry's standard
-                        dummy text ever since the 1500s,</p>
-                    <ul class="ul__list--inline mt--1">
-                        <li class="v--middle mr--2">
-                            <img src="Resources/img/hotel-man-person-2017802.jpg" class="img--radius" alt="">
-                        </li>
-                        <li class="semibold color--blue-2">
-                            Admin
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-4 content">
-                <div class="padding">
-                    <div class="mobile">
-                        <img class="picture pict-sub" src="Resources/img/LRM_EXPORT_906807770815861_20190903_225401648.jpeg">
-                        <h5 class="m--0 color--blue-2 semibold judul-artikel">Cara Memilih Rute Yang Baik</h5>
-                    </div>
-                    <p class="isi-artikel t-align-justify">Lorem Ipsum is simply dummy text of the printing and typesetting
-                        industry. Lorem
-                        Ipsum has been the industry's standard
-                        dummy text ever since the 1500s,</p>
-                    <ul class="ul__list--inline mt--1">
-                        <li class="v--middle mr--2">
-                            <img src="Resources/img/hotel-man-person-2017802.jpg" class="img--radius" alt="">
-                        </li>
-                        <li class="semibold color--blue-2">
-                            Admin
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-4 content">
-                <div class="padding">
-                    <div class="mobile">
-                        <img class="picture pict-sub" src="Resources/img/LRM_EXPORT_906807770815861_20190903_225401648.jpeg">
-                        <h5 class="m--0 color--blue-2 semibold judul-artikel">Cara Memilih Rute Yang Baik</h5>
-                    </div>
-                    <p class="isi-artikel t-align-justify">Lorem Ipsum is simply dummy text of the printing and typesetting
-                        industry. Lorem
-                        Ipsum has been the industry's standard
-                        dummy text ever since the 1500s,</p>
-                    <ul class="ul__list--inline mt--1">
-                        <li class="v--middle mr--2">
-                            <img src="Resources/img/hotel-man-person-2017802.jpg" class="img--radius" alt="">
-                        </li>
-                        <li class="semibold color--blue-2">
-                            Admin
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-4 content">
-                <div class="padding">
-                    <div class="mobile">
-                        <img class="picture pict-sub" src="Resources/img/LRM_EXPORT_906807770815861_20190903_225401648.jpeg">
-                        <h5 class="m--0 color--blue-2 semibold judul-artikel">Cara Memilih Rute Yang Baik</h5>
-                    </div>
-                    <p class="isi-artikel t-align-justify">Lorem Ipsum is simply dummy text of the printing and typesetting
-                        industry. Lorem
-                        Ipsum has been the industry's standard
-                        dummy text ever since the 1500s,</p>
-                    <ul class="ul__list--inline mt--1">
-                        <li class="v--middle mr--2">
-                            <img src="Resources/img/hotel-man-person-2017802.jpg" class="img--radius" alt="">
-                        </li>
-                        <li class="semibold color--blue-2">
-                            Admin
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+
     <!-- start:footer -->
-    </div>
     <footer>
         <div class="grid-container">
             <hr>
@@ -192,7 +231,7 @@
                 </div>
                 <div class="grid-item-6 text--right">
                     <p class="m--0 color--blue-2 d--inline-block mr--2">Info Lainnya</p>
-    
+
                     <ul class="ul__list--inline component--social">
                         <li>
                             <a href="#!"><img src="Resources/img/instagram.png" alt=""></a>
@@ -206,5 +245,9 @@
         </div>
     </footer>
     <!-- end:footer -->
+
+    <script type="text/javascript" src="assets/js/situwisata.js"></script>
+
 </body>
+
 </html>
