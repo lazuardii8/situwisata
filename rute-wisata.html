@@ -20,16 +20,23 @@
     <!-- header -->
     <div class="b-ungu col-12 header">
         <div class="row ">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html" class="color--white-1 semibold text--mini">Home</a>
+                <a href="ragam-wisata.html" class="color--white-1 semibold text--mini">Ragam Wisata</a>
+                <a href="rute-wisata.html" class="color--white-1 semibold text--mini">Rute Wisata</a>
+                <a href="akomodasi.html" class="color--white-1 semibold text--mini">Akomodasi</a>
+            </div>
             <img src="Resources/img/logo2.png" alt="logo situwisata" class="logo">
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
+            <a href="javascript:void(0);" class=" color--white-1 icon" onclick="openNav()">
+                <i class="fa fa-th-list" aria-hidden="true"></i>
             </a>
             <ul class="main-nav" id="main-nav">
-                <li class="navbar"><a class="link" href="index.html">Home</a></li>
-                <li class="navbar"><a class="link" href="ragam-wisata.html">Ragam Wisata</a></li>
-                <li class="navbar"><a class="link" href="rute-wisata.html">Rute Wisata</a></li>
-                <li class="navbar"><a class="link" href="akomodasi.html">Akomodasi</a></li>
-                <li class="navbar"><a class="link" href="daftar-artikel.html">Artikel</a></li>
+                <li class="navbar"><a class="link semi-bold" href="index.html">Home</a></li>
+                <li class="navbar"><a class="link semi-bold" href="ragam-wisata.html">Ragam Wisata</a></li>
+                <li class="navbar"><a class="link semi-bold" href="rute-wisata.html">Rute Wisata</a></li>
+                <li class="navbar"><a class="link semi-bold" href="akomodasi.html">Akomodasi</a></li>
+                <li class="navbar"><a class="link semi-bold" href="daftar-artikel.html">Artikel</a></li>
             </ul>
         </div>
     </div>
@@ -45,7 +52,7 @@
             <h1 class="d-inline-block">Wisata</h1>
         </div>
         <div class="col-12">
-            <h2>Wisata Pagi</h2><br>
+            <h2 class="text--mini-25">Wisata Pagi</h2><br>
         </div>
         <div class="col-5">
             <p class="t-align-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in varius enim. Nulla ac volutpat enim, a eleifend libero. Fusce justo magna, dictum ut odio quis, sollicitudin tincidunt quam. Sed imperdiet neque sed accumsan pellentesque.
@@ -92,7 +99,7 @@
         </div>
         <div class="col-12">
             <br><br>
-            <h2 class="t-align-right">Wisata Sore</h2><br>
+            <h2 class="text--mini-25 t-align-right">Wisata Sore</h2><br>
         </div>
         <div class="col-6 ">
             <ul class="list-rute">

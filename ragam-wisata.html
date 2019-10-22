@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="Resources/css/style.css">
     <link rel="stylesheet" type="text/css" href="Resources/css/grid.css">
     <link rel="stylesheet" type="text/css" href="Resources/css/ragamWisata.css">
-    <script src="Resources/js/mobileHeader.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>Rute Wisata</title>
 </head>
 
@@ -18,17 +18,24 @@
 
     <!-- header -->
     <div class="b-ungu col-12 header">
-        <div class="row">
+        <div class="row ">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html" class="color--white-1 semibold text--mini">Home</a>
+                <a href="ragam-wisata.html" class="color--white-1 semibold text--mini">Ragam Wisata</a>
+                <a href="rute-wisata.html" class="color--white-1 semibold text--mini">Rute Wisata</a>
+                <a href="akomodasi.html" class="color--white-1 semibold text--mini">Akomodasi</a>
+            </div>
             <img src="Resources/img/logo2.png" alt="logo situwisata" class="logo">
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
+            <a href="javascript:void(0);" class=" color--white-1 icon" onclick="openNav()">
+                <i class="fa fa-th-list" aria-hidden="true"></i>
             </a>
             <ul class="main-nav" id="main-nav">
-                <li class="navbar"><a class="link" href="#">Home</a></li>
-                <li class="navbar"><a class="link" href="#">Ragam Wisata</a></li>
-                <li class="navbar"><a class="link" href="#">Rute Wisata</a></li>
-                <li class="navbar"><a class="link" href="#">Akomodasi</a></li>
-                <li class="navbar"><a class="link" href="#">Artikel</a></li>
+                <li class="navbar"><a class="link semi-bold" href="index.html">Home</a></li>
+                <li class="navbar"><a class="link semi-bold" href="ragam-wisata.html">Ragam Wisata</a></li>
+                <li class="navbar"><a class="link semi-bold" href="rute-wisata.html">Rute Wisata</a></li>
+                <li class="navbar"><a class="link semi-bold" href="akomodasi.html">Akomodasi</a></li>
+                <li class="navbar"><a class="link semi-bold" href="daftar-artikel.html">Artikel</a></li>
             </ul>
         </div>
     </div>
@@ -81,6 +88,8 @@
             <i class="fab fa-instagram"></i>
         </label>
     </div>
+
+    <script src="assets/js/situwisata.js"></script>
 </body>
 
 </html>
