@@ -15,6 +15,10 @@ html {
     color: #013450;
 }
 
+.semi-bold{
+    font-weight: 600 !important;
+}
+
 .b-ungu {
     background-color: #6F77EF;
 }
@@ -113,13 +117,13 @@ h1 {
 
 .main-nav {
     list-style: none;
-    margin: 1vh 0;
+    margin: 3vh 0;
     float: right;
 }
 
 .navbar {
     display: inline-block;
-    margin-left: 2vw;
+    margin-left: 1vw;
 }
 
 .main-nav li a {
@@ -129,6 +133,7 @@ h1 {
 }
 
 .logo {
+    margin: 1vh 0;
     height: 50px;
     width: auto;
 }
