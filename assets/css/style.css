@@ -88,7 +88,7 @@ html,body{
 
 /* md */
 
-@media (min-width:768px) and (max-width:1140px) {
+@media (min-width:768px) and (max-width:3000px) {
 	.grid-item-md-1 {
 		width: 8.33%;
 	}
@@ -871,6 +871,10 @@ ul>li> .active{
 	color: #F9FBF5;
 }
 
+.color--red{
+	color: red;
+}
+
 /* background */
 
 .bg--gray-1{
@@ -1148,6 +1152,14 @@ ul>li> .active{
 
 .component--card-login{
 	border: 3px solid #6F77EF;
+}
+
+.validate--email{
+	display: none;
+}
+
+.validate--password{
+	display: none;
 }
 
 @media screen and (max-height: 450px) {
