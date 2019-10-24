@@ -48,7 +48,7 @@
 
 <div class="grid-container mt--5 mb--5">
     <div class="grid-row ">
-        <div class="grid-item-5 grid-item-center">
+        <div class="grid-item-12 grid-item-md-5 grid-item-center">
             <div class="component--card-login bg--white-1 p--5 radius-10">
 
                 <h4 class="bold color--blue-2 mt--0 text--center">Login Admin</h4>
@@ -57,16 +57,18 @@
 
                     <div class="form--grup mt--0">
                         <label class="color--blue-2">Email</label>
-                        <input type="email" class="form--input-blue-2">
+                        <input type="email" class="form--input-blue-2 email-input">
+                        <p class="mt--1 m--0 color--red validate--email">Ada kesalahan di email anda</p>
                     </div>
 
 
                     <div class="form--grup mt--0">
-                        <label class="color--blue-2">Password</label>
-                        <input type="password" class="form--input-blue-2">
+                        <label class="color--blue-2 ">Password</label>
+                        <input type="password" class="form--input-blue-2 password-input">
+                        <p class="mt--1 m--0 color--red validate--password">Ada kesalahan di password anda</p>
                     </div>
 
-                    <button type="button" class="btn btn--blue-2 color--white-1 btn--login mx--auto d--block">Login</button>
+                    <button type="button" class="btn btn-input btn--blue-2 color--white-1 btn--login mx--auto d--block">Login</button>
                 </form>
             </div>
         </div>
@@ -100,8 +102,58 @@
 </footer>
 <!-- end:footer -->
 
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/situwisata.js"></script>
 
+<script type="text/javascript">
+    $('.btn-input').click(function () {
+        var email = $('.email-input').val();
+        var password = $('.password-input').val();
+
+        if (email != '' && password != '') {
+
+            if (validateEmail(email)) {
+                alert('Anda berhasil Login');
+                window.location.href = "dashboard-hotel.html";
+            } else {
+                alert('Ada Kesalahan');
+                $('.validate--email').css({
+                    'display':'block'
+                });
+
+                $('.validate--password').css({
+                    'display':'none'
+                });
+            }
+
+        }else{
+            alert('Ada Kesalahan');
+
+            if (email == '' && password == '') {
+                $('.validate--email').css({
+                    'display':'block'
+                });
+
+                $('.validate--password').css({
+                    'display':'block'
+                });
+            } else if (email == '' && password != '') {
+                $('.validate--email').css({
+                    'display':'block'
+                });
+            }else if(email != '' && password == ''){
+                $('.validate--password').css({
+                    'display':'block'
+                });
+            }
+        }
+    });
+
+    function validateEmail($email) {
+      var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+      return emailReg.test( $email );
+  }
+</script>
 </body>
 
 </html>
