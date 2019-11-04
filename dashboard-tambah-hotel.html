@@ -177,10 +177,8 @@
  }
 
 }
-
-$('.file--upload input').change(function () {
-    $('.image--detail-all').remove();
-    $('.file--upload').append(`
+$.fn.uploadGambar = function () {
+    this.append(`
         <div class="grid-row image--detail-all">
         <div class="grid-item-6">
         <img class="image--preview" src="Resources/img/beach-calm-clouds-457882.jpg" alt="">
@@ -194,8 +192,16 @@ $('.file--upload input').change(function () {
         </div>
         </div>
         `);
+}
+
+$('.file--upload input').change(function () {
+    $('.image--detail-all').remove();
+
+    $('.file--upload').uploadGambar();
     readURL(this);
 });
+
+
 
 </script>
 
