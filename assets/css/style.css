@@ -914,7 +914,9 @@ ul>li> .active{
 	width: auto;
 	height: 50px;
 }
-
+.d-inline-block{
+	display: inline-block;
+}
 .situwisata--header{
 	background-image: url('../../Resources/img/beach-clouds-daytime-994605.jpg');
 	background-size: 100%;
