@@ -787,8 +787,19 @@ section{
 	transition: .5s;
 }
 
+
 .btn--blue-2:hover{
 	box-shadow: 0px 10px 30px RGBA(111, 119, 239, 0.36);
+}
+
+.btn--gray-1{
+	background-color: #CCCCCC;
+	transition: .5;
+	opacity: .5;
+}
+
+.btn--gray-1:hover{
+	opacity: 1;
 }
 
 .btn--outline-blue-2{
@@ -1162,6 +1173,33 @@ ul>li> .active{
 
 .validate--password{
 	display: none;
+}
+
+.modal{
+	z-index: 999;
+	margin: 0 auto;
+	max-width: 500px;
+}
+
+.overlay--modal{
+	background-color: #cccccc57;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow-y: scroll;
+	display: none;
+	z-index: 999;
+}
+
+.modal-body{
+	background-color: white;
+	border-radius: 15px;
+}
+
+.modal-show{
+	display: block;
 }
 
 @media screen and (max-height: 450px) {

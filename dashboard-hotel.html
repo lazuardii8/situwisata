@@ -33,15 +33,15 @@
             </a>
 
             <ul class="ul__list--inline float--right mt--3">
-             <li class="hidden--mobile mr--3"><a href="index.html" class="color--white-1 semibold text--mini">Home</a></li>
-             <li class="hidden--mobile mr--3"><a href="ragam-wisata.html" class="color--white-1 semibold text--mini">Ragam Wisata</a></li>
-             <li class="hidden--mobile mr--3"><a href="rute-wisata.html" class="color--white-1 semibold text--mini">Rute Wisata</a></li>
-             <li class="hidden--mobile mr--3"><a href="akomodasi.html" class="color--white-1 semibold text--mini">Akomodasi</a></li>
-             <li class="hidden--mobile"><a href="daftar-artikel.html" class="color--white-1 semibold text--mini">Artikel</a></li>
-             <li class="show--mobile"><span class="color--white-1 text--mini-18" style="cursor:pointer" onclick="openNav()"><i class="fa fa-th-list" aria-hidden="true"></i></span></li>
-         </ul>
-     </nav>
- </div>
+               <li class="hidden--mobile mr--3"><a href="index.html" class="color--white-1 semibold text--mini">Home</a></li>
+               <li class="hidden--mobile mr--3"><a href="ragam-wisata.html" class="color--white-1 semibold text--mini">Ragam Wisata</a></li>
+               <li class="hidden--mobile mr--3"><a href="rute-wisata.html" class="color--white-1 semibold text--mini">Rute Wisata</a></li>
+               <li class="hidden--mobile mr--3"><a href="akomodasi.html" class="color--white-1 semibold text--mini">Akomodasi</a></li>
+               <li class="hidden--mobile"><a href="daftar-artikel.html" class="color--white-1 semibold text--mini">Artikel</a></li>
+               <li class="show--mobile"><span class="color--white-1 text--mini-18" style="cursor:pointer" onclick="openNav()"><i class="fa fa-th-list" aria-hidden="true"></i></span></li>
+           </ul>
+       </nav>
+   </div>
 </nav>
 
 <!-- end:header     -->
@@ -60,7 +60,7 @@
 
 
             <div class="component--button-add normal text--mini-18">
-                <a href="dashboard-tambah-hotel.html" class=" color--blue-2"><div class="d--inline-block mr--2 v--middle">+</div> Tambah Hotel</a>
+                <a href="#!" class=" color--blue-2 tambah__data__hotel"><div class="d--inline-block mr--2 v--middle">+</div> Tambah Hotel</a>
             </div>
 
 
@@ -339,8 +339,82 @@
 </footer>
 <!-- end:footer -->
 
-<script type="text/javascript" src="assets/js/situwisata.js"></script>
+<div class="overlay--modal">
+    <div class="p--relative">
+        <div class="modal mt--5 mb--5">
+            <div class="modal-body">
 
+               <div class="component--card-login bg--white-1 p--5 radius-10">
+
+                <form action="">
+
+                  <div class="form--grup mt--0">
+                    <label class="color--blue-2">Nama Hotel</label>
+                    <input type="text" class="form--input-blue-2">
+                </div>
+
+
+                <div class="form--grup mt--0 file--upload">
+                    <label class="color--blue-2">Foto</label>
+                    <input type="file" class="form--input-blue-2">
+                </div>
+
+
+                <div class="form--grup mt--0">
+                    <label class="color--blue-2">Reting</label>
+                    <select class="form--input-blue-2">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                  </select>
+              </div>
+
+              <div class="form--grup mt--0">
+                <label class="color--blue-2">Harga</label>
+                <input type="text" class="form--input-blue-2">
+            </div>
+
+
+            <div class="form--grup mt--0">
+                <label class="color--blue-2">Lokasi</label>
+                <input type="text" class="form--input-blue-2">
+            </div>
+
+
+            <div class="form--grup mt--0">
+                <label class="color--blue-2">Lokasi</label>
+                <input type="text" class="form--input-blue-2">
+            </div>
+
+
+            <div class="form--grup mt--0">
+                <label class="color--blue-2">Deskripsi</label>
+                <textarea class="form--input-blue-2" style="height: 200px; resize: none;">
+
+                </textarea>
+            </div>
+
+            <button type="button" class="btn btn--blue-2 color--white-1 btn--login mx--auto d--inline-block mr--2">Submit</button>
+             <button type="button" class="btn btn--gray-1 color--blue-2 btn--login mx--auto d--inline-block modal--tutup">Tutup</button>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/situwisata.js"></script>
+<script type="text/javascript">
+    $('.tambah__data__hotel').click(function () {
+       $('.overlay--modal').addClass('modal-show');
+   });
+
+    $('.modal--tutup').click(function () {
+       $('.overlay--modal').removeClass('modal-show');
+   });
+</script>
 </body>
 
 </html>
