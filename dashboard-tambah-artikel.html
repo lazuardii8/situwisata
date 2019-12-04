@@ -144,15 +144,26 @@
                 $('.image--name').html(input.files[0].name);
                 $('.image--size').html(input.files[0].size);
 
+                if (input.files[0].size > 1048576) {
+                    $('.foto--error').remove();
+                    $('.image--detail-all').remove();
+                    $('.file--upload input').val('');
+                    $('.file--upload').append('<p  class="foto--error" style="color:red">Ukuran tidak boleh lebih dari 1 mb</p>');
+                    console.log('lebih dari 1mb');
+                } else {
+                    if (input.files[0].type == 'image/png' || input.files[0].type == 'image/jpg' || input.files[0].type == 'image/jpeg') {
+                        console.log('bener sihhh');
+                        $('.foto--error').remove();
+                    } else {
+                        console.log('salah');
+                        $('.foto--error').remove();
+                        $('.image--detail-all').remove();
+                        $('.file--upload input').val('');
+                        $('.file--upload').append('<p class="foto--error" style="color:red">Hanya untuk upload foto dengan format jpg, jpeg dan png</p>');
+                    }
+                }
+
                 reader.readAsDataURL(input.files[0]);
-
-                // console.log(input.files);
-
-                //  var image = new Image();
-                //  image.src = input.files.target.result();
-                //  image.onload = function () {
-                //     console.log(this.width + " " + this.height);
-                // };
             }
 
         }
