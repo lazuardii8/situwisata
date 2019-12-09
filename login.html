@@ -103,10 +103,30 @@
 </footer>
 <!-- end:footer -->
 
+<div class="overlay--modal">
+    <div class="p--relative">
+        <div class="modal mt--5 mb--5">
+            <div class="modal-body">
+                <div class="component--card-login bg--white-1 p--5 radius-10">
+                    <label class="color--blue-2" id="error">Judul</label>
+                    <br><br>
+                    <button type="button"
+                        class="btn btn--gray-1 color--blue-2 btn--login mx--auto d--inline-block modal--tutup float--right" >Tutup</button>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/situwisata.js"></script>
 
 <script type="text/javascript">
+    $('.modal--tutup').click(function () {
+        $('.overlay--modal').removeClass('modal-show');
+    });
+
     $('.btn-input').click(function () {
         var email = $('.email-input').val();
         var password = $('.password-input').val();
@@ -114,10 +134,10 @@
         if (email != '' && password != '') {
 
             if (validateEmail(email)) {
-                alert('Anda berhasil Login');
+                modal_error('Anda berhasil Login');
                 window.location.href = "dashboard-hotel.html";
             } else {
-                alert('Ada Kesalahan');
+                modal_error('Ada Kesalahan');
                 $('.validate--email').css({
                     'display':'block'
                 });
@@ -128,7 +148,8 @@
             }
 
         }else{
-            alert('Ada Kesalahan');
+            
+            modal_error('Ada Kesalahan');
 
             if (email == '' && password == '') {
                 $('.validate--email').css({
@@ -153,7 +174,12 @@
     function validateEmail($email) {
       var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
       return emailReg.test( $email );
-  }
+    }
+
+    function modal_error($error){
+        $('#error').text($error);
+        $('.overlay--modal').addClass('modal-show');
+    }
 </script>
 </body>
 

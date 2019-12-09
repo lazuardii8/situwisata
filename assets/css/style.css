@@ -1263,4 +1263,33 @@ ul>li> .active{
 		width: 100%;
 		object-fit: cover;
 	}
+	.overlay--modal {
+		
+	}
+
+	@keyframes open_modal{
+		from{
+			transform: scale(0);
+			opacity: 0;
+			z-index: -1;
+		}
+		to{
+			transform: scale(1);
+			opacity: 1;
+			z-index: 2;
+		}
+	}
+
+	@keyframes close_modal{
+		from{
+			transform: scale(1);
+			opacity: 1;
+			z-index: 2;
+		}
+		to{
+			transform: scale(0);
+			opacity: 0;
+			z-index: -1;
+		}
+	}
 }
