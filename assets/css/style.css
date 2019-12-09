@@ -1189,8 +1189,8 @@ ul>li> .active{
 	right: 0;
 	bottom: 0;
 	overflow-y: scroll;
-	display: none;
-	z-index: 999;
+	opacity: 0;
+	z-index: -1;
 }
 
 .modal-body{
@@ -1200,6 +1200,48 @@ ul>li> .active{
 
 .modal-show{
 	display: block;
+}
+
+.hideModal{
+	z-index:-1;
+	opacity:0;
+	animation: hide .25s;
+
+	transform: scale(0);
+}
+@keyframes hide {
+	from{
+		z-index:2;
+		transform: scale(1);
+		opacity:1;
+	} 
+	to{
+		z-index:-1;
+		transform: scale(0);
+		opacity: 0;
+	}
+}
+.showModal{
+	opacity:1;
+	z-index:2;
+	animation: show .2s;
+
+	transform: scale(1);
+}
+
+@keyframes show {
+	from{
+
+		transform: scale(0);
+		opacity:0;
+		z-index:-1;
+	} 
+	to{
+
+		transform: scale(1);
+		opacity: 1;
+		z-index:2;
+	}
 }
 
 @media screen and (max-height: 450px) {
@@ -1264,7 +1306,7 @@ ul>li> .active{
 		object-fit: cover;
 	}
 	.overlay--modal {
-		
+
 	}
 
 	@keyframes open_modal{

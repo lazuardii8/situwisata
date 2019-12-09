@@ -397,7 +397,7 @@
             </div>
 
             <button type="button" class="btn btn--blue-2 color--white-1 btn--login mx--auto d--inline-block mr--2">Submit</button>
-             <button type="button" class="btn btn--gray-1 color--blue-2 btn--login mx--auto d--inline-block modal--tutup">Tutup</button>
+             <button type="button" class="btn btn--gray-1 color--blue-2 btn--login mx--auto d--inline-block modal--tutup" onclick="closeM()">Tutup</button>
         </form>
     </div>
 </div>
@@ -408,11 +408,12 @@
 <script type="text/javascript" src="assets/js/situwisata.js"></script>
 <script type="text/javascript">
     $('.tambah__data__hotel').click(function () {
-       $('.overlay--modal').addClass('modal-show');
+       $('.overlay--modal').addClass('showModal');
    });
 
     $('.modal--tutup').click(function () {
-       $('.overlay--modal').removeClass('modal-show');
+       $('.overlay--modal').addClass('hideModal');
+       $('.overlay--modal').removeClass('showModal');
    });
 </script>
 <script type="text/javascript">
