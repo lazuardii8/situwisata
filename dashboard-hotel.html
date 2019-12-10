@@ -408,11 +408,17 @@
 <script type="text/javascript" src="assets/js/situwisata.js"></script>
 <script type="text/javascript">
     $('.tambah__data__hotel').click(function () {
-       $('.overlay--modal').addClass('modal-show');
+          $('.overlay--modal').addClass('modal-show');
+          $('.overlay--modal').show();
+    //    $('.overlay--modal').addClass('modal-show');
+    //    $('.overlay--modal').css({ 'animation-name': 'fadeIn' });
+    //    $('.overlay--modal').removeClass('modal-hide');
    });
 
     $('.modal--tutup').click(function () {
        $('.overlay--modal').removeClass('modal-show');
+        $('.overlay--modal').css({ 'animation-name': 'zoomOut' });
+       $('.overlay--modal').addClass('modal-hide');
    });
 </script>
 <script type="text/javascript">
@@ -476,8 +482,6 @@
         $('.file--upload').uploadGambar();
         readURL(this);
     });
-
-
 
 </script>
 </body>

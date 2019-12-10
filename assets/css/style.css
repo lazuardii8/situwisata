@@ -130,7 +130,7 @@ html,body{
 /* md */
 
 @media (max-width: 767px) {
-
+	
 	.grid-item-md-1 {
 		width: 100%;
 	}
@@ -167,13 +167,13 @@ html,body{
 	.grid-item-md-12 {
 		width: 100%;
 	}
-
+	
 }
 
 /* xs */
 
 @media (min-width:375px) and (max-width:767px) {
-
+	
 	.grid-item-xs-1 {
 		width: 8.33%;
 	}
@@ -213,7 +213,7 @@ html,body{
 }
 
 @media (max-width: 374px) {
-
+	
 	.grid-item-xs-1 {
 		width: 100%;
 	}
@@ -250,7 +250,7 @@ html,body{
 	.grid-item-xs-12 {
 		width: 100%;
 	}
-
+	
 }
 
 /* image */
@@ -1148,7 +1148,7 @@ ul>li> .active{
 	color: white;
 	display: block;
 	transition: 0.3s;
-
+	
 }
 
 .sidenav a:hover{
@@ -1191,39 +1191,72 @@ ul>li> .active{
 	overflow-y: scroll;
 	display: none;
 	z-index: 999;
+	animation-name: fadeIn;
+	animation-duration:  0.5s;
 }
 
 .modal-body{
 	background-color: white;
 	border-radius: 15px;
+	transition: .5s;
+	
 }
 
 .modal-show{
 	display: block;
+	animation: show 0.3s;
+	background:rgba(0,0,0,.7);
 }
 
+.modal-hide{
+	display: none;
+	animation: zoomOut 0.5s !important;
+}
+
+@keyframes zoomOut {
+	from {
+		opacity: 1;
+		transform:scale(1);
+	}
+	to {
+		opacity: 0;
+		transform:scale(0);
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+		background:rgba(0,0,0,.0);
+	}
+	100% {
+		opacity: 1;
+		display: block;
+		background:rgba(0,0,0,.7);
+	}
+}
 @media screen and (max-height: 450px) {
 	.sidenav {padding-top: 15px;}
 	.sidenav a {font-size: 18px;}
 }
 
 @media (max-width: 768px) {
-
+	
 	.component--image-homepage>li{
 		display: inline-block;
 		margin-bottom: 0;
 	}
-
+	
 	.component--image-homepage>li:nth-child(1){
 		margin-right: 5px;
 	}
-
+	
 	.component--image-right {
 		width: 200px;
 		height: 200px;
 		object-fit: cover;
 	}
-
+	
 }
 
 
@@ -1241,23 +1274,23 @@ ul>li> .active{
 		width: 100px;
 		height: 100px;
 	}
-
+	
 	.component--image-step img{
 		height: 50px;
 		width: 50px;
 	}
-
+	
 	.situwisata--header{
 		background-size: cover;
 	}
-
+	
 	.component--list-img-hompage{
 		text-align: center;
 	}
 	.component--image-homepage>li:nth-child(1){
 		margin: 0;
 	}
-
+	
 	.component--image-left,.component--image-right  {
 		height: 200px;
 		width: 100%;
@@ -1266,7 +1299,7 @@ ul>li> .active{
 	.overlay--modal {
 		
 	}
-
+	
 	@keyframes open_modal{
 		from{
 			transform: scale(0);
@@ -1279,7 +1312,7 @@ ul>li> .active{
 			z-index: 2;
 		}
 	}
-
+	
 	@keyframes close_modal{
 		from{
 			transform: scale(1);
